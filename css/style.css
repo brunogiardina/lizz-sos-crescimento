@@ -798,13 +798,36 @@ Start section 6
 .section-6 .section-6-gift .s-6-text-rotate {
   width: 100px;
   height: 100px;
-  transform: rotate(3600deg);
-  transition: 800s linear;
 }
 
 .section-6 .section-6-gift .s-6-rotate {
   margin-left: -80px;
   margin-top: -30px;
+}
+
+@keyframes s-6-text-rotate {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.s-6-text-rotate {
+  -webkit-animation: s-6-text-rotate 8s linear infinite;
+  -moz-animation: s-6-text-rotate 8s linear infinite;
+  -ms-animation: s-6-text-rotate 8s linear infinite;
+  -o-animation: s-6-text-rotate 8s linear infinite;
+  animation: s-6-text-rotate 8s linear infinite;
 }
 
 .section-6 .s-6-division {
