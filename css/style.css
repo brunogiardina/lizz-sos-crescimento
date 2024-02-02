@@ -798,7 +798,7 @@ Start section 6
 .section-6 .section-6-gift .s-6-text-rotate {
   width: 100px;
   height: 100px;
-  transform: rotate(36000deg);
+  transform: rotate(3600deg);
   transition: 800s linear;
 }
 
